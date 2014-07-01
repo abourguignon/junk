@@ -1,5 +1,6 @@
 import sys
 from optparse import OptionParser
+from collections import Counter
 
 # Args
 parser = OptionParser(description="Dummy command line stats tool")
@@ -15,19 +16,18 @@ except:
 # Count
 f = open(options.filename, 'r')
 
-count = {}
-max_size = 0
+commands = []
 for e in f.readlines():
     # Only take the `depth` first words into account
     cmd = ' '.join(e.split(' ')[:options.depth]).rstrip()
-    count[cmd] = count[cmd] + 1 if cmd in count else 1
+    commands.append(cmd)
 
-sorted_truncated_count = sorted(count, key=count.get, reverse=True)[:options.output_length]
+commands_count = Counter(commands).most_common(options.output_length)
 
 # Output
 # Determine max size for output padding
-max_cmd_length = len(max(sorted_truncated_count, key=len))
+max_cmd_length = max([len(t[0]) for t in commands_count])
 print "Your %s top used commands (depth %s)\n" % (options.output_length, options.depth)
-for cmd in sorted_truncated_count:
+for cmd, count in commands_count:
     padding = (max_cmd_length - len(cmd)) * ' '
-    print '%s %s %s' % (cmd, padding, count[cmd])
+    print '%s %s %s' % (cmd, padding, count)
