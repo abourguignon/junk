@@ -1,8 +1,9 @@
 """
 For a range of numbers going from 1 to 100: 
-- if the number is a multiple of 3 or contains the number 3, print "Fizz"
-- if the number is a multiple of 5 or contains the number 5, print "Buzz"
-- otherwise print the number
+a) if the number is a multiple of 3 or contains the number 3, print "Fizz"
+b) if the number is a multiple of 5 or contains the number 5, print "Buzz"
+c) if a) and b), print "FizzBuzz"
+d) otherwise print the number
 """
 
 output = ''
