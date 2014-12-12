@@ -1,0 +1,112 @@
+[
+{
+  "fields": {
+    "province": "Hainaut",
+    "city": "Goz\u00e9e",
+    "street": "Rue de Von\u00eache 415",
+    "zip_code": "6534"
+  },
+  "model": "webservice.address",
+  "pk": 1
+},
+{
+  "fields": {
+    "province": "Hainaut",
+    "city": "Petit-Thier",
+    "street": "Rue des Tanneurs 441",
+    "zip_code": "6692"
+  },
+  "model": "webservice.address",
+  "pk": 2
+},
+{
+  "fields": {
+    "province": "Li\u00e8ge",
+    "city": "Fl\u00e9malle-Grande",
+    "street": "Sur les Tailles 232\r\n\r\n ",
+    "zip_code": "4400"
+  },
+  "model": "webservice.address",
+  "pk": 3
+},
+{
+  "fields": {
+    "date_of_birth": "1982-02-14",
+    "first_name": "Alice",
+    "last_name": "Magrand",
+    "address": 1
+  },
+  "model": "webservice.client",
+  "pk": 1
+},
+{
+  "fields": {
+    "date_of_birth": "1979-05-19",
+    "first_name": "Bob",
+    "last_name": "Petit",
+    "address": 2
+  },
+  "model": "webservice.client",
+  "pk": 2
+},
+{
+  "fields": {
+    "date_of_birth": "1992-07-28",
+    "first_name": "Carl",
+    "last_name": "Winchester",
+    "address": 3
+  },
+  "model": "webservice.client",
+  "pk": 3
+},
+{
+  "fields": {
+    "date_of_birth": "1988-09-03",
+    "first_name": "David",
+    "last_name": "Dupont",
+    "address": 1
+  },
+  "model": "webservice.client",
+  "pk": 4
+},
+{
+  "fields": {
+    "balance": 42,
+    "type": "DEPOSIT",
+    "number": "BE62510007547061",
+    "client": 1
+  },
+  "model": "webservice.account",
+  "pk": 1
+},
+{
+  "fields": {
+    "balance": -211,
+    "type": "DEPOSIT",
+    "number": "BE89117052404285",
+    "client": 2
+  },
+  "model": "webservice.account",
+  "pk": 2
+},
+{
+  "fields": {
+    "balance": 2914666,
+    "type": "OTHER",
+    "number": "FR1420041010050500013M02606",
+    "client": 3
+  },
+  "model": "webservice.account",
+  "pk": 3
+},
+{
+  "fields": {
+    "balance": 1337,
+    "type": "DEPOSIT",
+    "number": "BE24310114300038",
+    "client": 4
+  },
+  "model": "webservice.account",
+  "pk": 4
+}
+]

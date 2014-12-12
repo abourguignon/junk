@@ -1,0 +1,8 @@
+Django==1.7
+django-tastypie==0.11.1
+django-tastypie-swagger==0.1.2
+ipython==2.2.0
+python-dateutil==2.2
+python-mimeparse==0.1.4
+pyzmq==14.3.1
+six==1.7.3
