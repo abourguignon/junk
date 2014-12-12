@@ -1,3 +1,7 @@
+"""
+Write a script that lists your most used commands.
+"""
+
 import sys
 from optparse import OptionParser
 from collections import Counter
